@@ -1,0 +1,15 @@
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\Backpropagation\bin\Debug\Backpropagation.dll
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\Backpropagation\bin\Debug\Backpropagation.pdb
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\Backpropagation\obj\Debug\Backpropagation.csprojResolveAssemblyReference.cache
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\Backpropagation\obj\Debug\Backpropagation.dll
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\Backpropagation\obj\Debug\Backpropagation.pdb
+C:\Users\Brian\Desktop\backpropagation\Backpropagation\bin\Debug\Backpropagation.dll
+C:\Users\Brian\Desktop\backpropagation\Backpropagation\bin\Debug\Backpropagation.pdb
+C:\Users\Brian\Desktop\backpropagation\Backpropagation\obj\Debug\Backpropagation.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Desktop\backpropagation\Backpropagation\obj\Debug\Backpropagation.dll
+C:\Users\Brian\Desktop\backpropagation\Backpropagation\obj\Debug\Backpropagation.pdb
+D:\Develop\IATurismo-master\backpropagation\Backpropagation\bin\Debug\Backpropagation.dll
+D:\Develop\IATurismo-master\backpropagation\Backpropagation\bin\Debug\Backpropagation.pdb
+D:\Develop\IATurismo-master\backpropagation\Backpropagation\obj\Debug\Backpropagation.csprojResolveAssemblyReference.cache
+D:\Develop\IATurismo-master\backpropagation\Backpropagation\obj\Debug\Backpropagation.dll
+D:\Develop\IATurismo-master\backpropagation\Backpropagation\obj\Debug\Backpropagation.pdb

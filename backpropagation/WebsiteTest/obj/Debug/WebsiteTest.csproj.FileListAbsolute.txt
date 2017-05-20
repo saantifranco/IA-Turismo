@@ -1,0 +1,6 @@
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\WebsiteTest\bin\WebsiteTest.dll.config
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\WebsiteTest\bin\WebsiteTest.dll
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\WebsiteTest\bin\WebsiteTest.pdb
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\WebsiteTest\obj\Debug\WebsiteTest.csprojResolveAssemblyReference.cache
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\WebsiteTest\obj\Debug\WebsiteTest.dll
+C:\Users\t-judamb\Documents\Visual studio 2017\Projects\backpropagation\WebsiteTest\obj\Debug\WebsiteTest.pdb

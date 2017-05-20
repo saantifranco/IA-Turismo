@@ -1,0 +1,14 @@
+C:\Users\Brian\Desktop\backpropagation\ConsoleTest\bin\Debug\ConsoleTest.exe
+C:\Users\Brian\Desktop\backpropagation\ConsoleTest\bin\Debug\ConsoleTest.pdb
+C:\Users\Brian\Desktop\backpropagation\ConsoleTest\bin\Debug\Backpropagation.dll
+C:\Users\Brian\Desktop\backpropagation\ConsoleTest\bin\Debug\Backpropagation.pdb
+C:\Users\Brian\Desktop\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Desktop\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.exe
+C:\Users\Brian\Desktop\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.pdb
+D:\Develop\IATurismo-master\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.exe
+D:\Develop\IATurismo-master\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.pdb
+D:\Develop\IATurismo-master\backpropagation\ConsoleTest\bin\Debug\ConsoleTest.exe
+D:\Develop\IATurismo-master\backpropagation\ConsoleTest\bin\Debug\ConsoleTest.pdb
+D:\Develop\IATurismo-master\backpropagation\ConsoleTest\bin\Debug\Backpropagation.dll
+D:\Develop\IATurismo-master\backpropagation\ConsoleTest\bin\Debug\Backpropagation.pdb
+D:\Develop\IATurismo-master\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
