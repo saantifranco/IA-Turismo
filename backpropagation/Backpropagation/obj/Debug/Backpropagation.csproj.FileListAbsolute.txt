@@ -13,3 +13,8 @@ D:\Develop\IATurismo-master\backpropagation\Backpropagation\bin\Debug\Backpropag
 D:\Develop\IATurismo-master\backpropagation\Backpropagation\obj\Debug\Backpropagation.csprojResolveAssemblyReference.cache
 D:\Develop\IATurismo-master\backpropagation\Backpropagation\obj\Debug\Backpropagation.dll
 D:\Develop\IATurismo-master\backpropagation\Backpropagation\obj\Debug\Backpropagation.pdb
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\Backpropagation\bin\Debug\Backpropagation.dll
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\Backpropagation\bin\Debug\Backpropagation.pdb
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\Backpropagation\obj\Debug\Backpropagation.csprojResolveAssemblyReference.cache
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\Backpropagation\obj\Debug\Backpropagation.dll
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\Backpropagation\obj\Debug\Backpropagation.pdb

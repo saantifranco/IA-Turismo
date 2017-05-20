@@ -50,6 +50,7 @@
     <Compile Include="Nodes\MiddleNode.cs" />
     <Compile Include="Nodes\Network.cs" />
     <Compile Include="Nodes\OutputNode.cs" />
+    <Compile Include="Nodes\Patron.cs" />
     <Compile Include="Nodes\Pattern.cs" />
     <Compile Include="Nodes\PatternList.cs" />
     <Compile Include="Nodes\SequenceGenerator.cs" />

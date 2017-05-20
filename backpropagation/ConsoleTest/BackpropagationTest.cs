@@ -1,5 +1,6 @@
 ﻿using System;
 using Backpropagation.Nodes;
+using System.Collections.Generic;
 
 namespace ConsoleTest
 {
@@ -34,32 +35,31 @@ namespace ConsoleTest
             
             model.TrainNetwork(CreatePatternList(), -1, 10000, 0.5, true);
             
-            Console.WriteLine("The result is: " + getCityID(model.RunNetwork(CreateInput())));
-            Console.WriteLine("The result is: " + conversor.convertir(getCityID(model.RunNetwork(CreateInput()))));
+            
             Console.WriteLine(model.Print());
-            double[][] patronesAValidar = new double[][]{
-                                                            new double[] {NO,NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,SI }, //5
-                                                            new double[] {NO,NO,SI,NO,NO,SI,SI,NO,NO,SI,NO,NO,SI}, //8
-                                                            new double[] {NO,NO,SI,NO,SI,NO,NO,NO,SI,SI,NO,NO,SI}, //10
-                                                            new double[] {NO,NO,SI,SI,NO,NO,NO,NO,SI,NO,SI,NO,SI}, //16
-                                                            new double[] {NO,NO,SI,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO}, //19
+            List<Patron> patronesAValidar = new List<Patron>{
+                                                            new Patron(new double[] {NO,NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,SI },5,"Mar del Plata, Rosario"), //5
+                                                            new Patron(new double[] {NO,NO,SI,NO,NO,SI,SI,NO,NO,SI,NO,NO,SI},8,"Salsipuedes, Huerta Grande, San Marcos Sierra"), //8
+                                                            new Patron(new double[] {NO,NO,SI,NO,SI,NO,NO,NO,SI,SI,NO,NO,SI},10,"Iguazú, Esteros del Iberá"),//10
+                                                            new Patron(new double[] {NO,NO,SI,SI,NO,NO,NO,NO,SI,NO,SI,NO,SI},16, "Mar del Plata, Rosario"),//16
+                                                            new Patron(new double[] {NO,NO,SI,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO},19, "Mar del Plata, Rosario"), //19
 
-                                                            new double[] {NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI}, //22
-                                                            new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,NO,SI}, //24
-                                                            new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,SI,NO}, //25
-                                                            new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,SI,NO,NO,SI}, //26
-                                                            new double[] {NO,SI,NO,NO,SI,NO,NO,SI,NO,SI,NO,NO,SI}, //33
-                                                            new double[] {NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,NO,SI}, //35
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI},22,"Iguazú, Esteros del Iberá, Ushuaia, Calafate"), //22
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,NO,SI},24,"Cordoba, Santa Fe, Bahia Blanca, Mar del Plata, Rosario"), //24
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,SI,NO},25,"Cordoba, Santa Fe, Bahia Blanca, Mar del Plata, Rosario"),//25
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,SI,NO,NO,SI},26,"Iguazú, Esteros del Iberá, Ushuaia, Calafate"), //26
+                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,NO,SI,NO,SI,NO,NO,SI},33,"Iguazú, Esteros del Iberá, Tilcara, Pumamarca"), //33
+                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,NO,SI},35,"Tilcara, Pumamarca, Salsipuedes, Huerta Grande, San Marcos Sierra"), //35
       
-                                                            new double[] {SI,NO,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI}, //45
-                                                            new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO}, //55
-                                                            new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI}, //56
-                                                            new double[] {SI,NO,NO,SI,NO,NO,SI,NO,NO,SI,NO,NO,SI} //58
+                                                            new Patron(new double[] {SI,NO,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI},45,"Bariloche, San Martin, Ushuaia, Calafate"), //45
+                                                            new Patron(new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO},55,"Mar del Plata, Rosario"), //55
+                                                            new Patron(new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI},56,"Pinamar, Gesell, San Bernardo, Tilcara, Pumamarca"), //56
+                                                            new Patron(new double[] {SI,NO,NO,SI,NO,NO,SI,NO,NO,SI,NO,NO,SI},58,"Pinamar, Gesell, San Bernardo, Tilcara, Pumamarca") //58
                                                           };
 
-            foreach (double[] patron in patronesAValidar)
+            foreach (Patron patron in patronesAValidar)
             {
-                Console.WriteLine("El resultado es: " + MapearPatron(patron, model, conversor));
+                Console.WriteLine("El resultado para el patron {0} es: " + MapearPatron(patron.input, model, conversor) + " y su salida esperada era " + patron.valorEsperado + Environment.NewLine,patron.idPatron);
 
             }
             Console.ReadKey();

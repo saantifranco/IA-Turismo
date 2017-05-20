@@ -12,3 +12,10 @@ D:\Develop\IATurismo-master\backpropagation\ConsoleTest\bin\Debug\ConsoleTest.pd
 D:\Develop\IATurismo-master\backpropagation\ConsoleTest\bin\Debug\Backpropagation.dll
 D:\Develop\IATurismo-master\backpropagation\ConsoleTest\bin\Debug\Backpropagation.pdb
 D:\Develop\IATurismo-master\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\ConsoleTest\bin\Debug\ConsoleTest.exe
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\ConsoleTest\bin\Debug\ConsoleTest.pdb
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\ConsoleTest\bin\Debug\Backpropagation.dll
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\ConsoleTest\bin\Debug\Backpropagation.pdb
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.exe
+C:\Users\t-judamb\Source\Repos\IA-Turismo\backpropagation\ConsoleTest\obj\x86\Debug\ConsoleTest.pdb
