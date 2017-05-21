@@ -49,7 +49,7 @@ namespace ConsoleTest
                                                             new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,SI,NO},25,"Cordoba, Santa Fe, Bahia Blanca || Mar del Plata, Rosario"),//25
                                                             new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,SI,NO,NO,SI},26,"Iguazú, Esteros del Iberá || Ushuaia, Calafate"), //26
                                                             new Patron(new double[] {NO,SI,NO,NO,SI,NO,NO,SI,NO,SI,NO,NO,SI},33,"Iguazú, Esteros del Iberá || Tilcara, Pumamarca"), //33
-                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,NO,SI},35,"Tilcara, Pumamarca, Salsipuedes || Huerta Grande, San Marcos Sierra"), //35
+                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,NO,SI},35,"Tilcara, Pumamarca || Salsipuedes, Huerta Grande, San Marcos Sierra"), //35
       
                                                             new Patron(new double[] {SI,NO,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI},45,"Bariloche, San Martin de los Andes || Ushuaia, Calafate"), //45
                                                             new Patron(new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO},55,"Mar del Plata, Rosario"), //55
