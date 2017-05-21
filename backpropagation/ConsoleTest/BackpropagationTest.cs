@@ -8,8 +8,8 @@ namespace ConsoleTest
     {
         private static int inputSize = 13;
         private static int outputSize = 3;
-        private static double one = 0.999999999999999;
-        private static double zero = 0.0000000000000001;
+        private static double one = 1;
+        private static double zero = 0;
 
         static void Main()
         {
@@ -44,17 +44,17 @@ namespace ConsoleTest
                                                             new Patron(new double[] {NO,NO,SI,SI,NO,NO,NO,NO,SI,NO,SI,NO,SI},16, "Mar del Plata, Rosario"),//16
                                                             new Patron(new double[] {NO,NO,SI,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO},19, "Mar del Plata, Rosario"), //19
 
-                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI},22,"Iguazú, Esteros del Iberá, Ushuaia, Calafate"), //22
-                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,NO,SI},24,"Cordoba, Santa Fe, Bahia Blanca, Mar del Plata, Rosario"), //24
-                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,SI,NO},25,"Cordoba, Santa Fe, Bahia Blanca, Mar del Plata, Rosario"),//25
-                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,SI,NO,NO,SI},26,"Iguazú, Esteros del Iberá, Ushuaia, Calafate"), //26
-                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,NO,SI,NO,SI,NO,NO,SI},33,"Iguazú, Esteros del Iberá, Tilcara, Pumamarca"), //33
-                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,NO,SI},35,"Tilcara, Pumamarca, Salsipuedes, Huerta Grande, San Marcos Sierra"), //35
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI},22,"Iguazú, Esteros del Iberá || Ushuaia, Calafate"), //22
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,NO,SI},24,"Cordoba, Santa Fe, Bahia Blanca || Mar del Plata, Rosario"), //24
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI,SI,NO},25,"Cordoba, Santa Fe, Bahia Blanca || Mar del Plata, Rosario"),//25
+                                                            new Patron(new double[] {NO,SI,NO,NO,NO,SI,NO,SI,NO,SI,NO,NO,SI},26,"Iguazú, Esteros del Iberá || Ushuaia, Calafate"), //26
+                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,NO,SI,NO,SI,NO,NO,SI},33,"Iguazú, Esteros del Iberá || Tilcara, Pumamarca"), //33
+                                                            new Patron(new double[] {NO,SI,NO,NO,SI,NO,SI,NO,NO,SI,NO,NO,SI},35,"Tilcara, Pumamarca, Salsipuedes || Huerta Grande, San Marcos Sierra"), //35
       
-                                                            new Patron(new double[] {SI,NO,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI},45,"Bariloche, San Martin, Ushuaia, Calafate"), //45
+                                                            new Patron(new double[] {SI,NO,NO,NO,NO,SI,NO,NO,SI,SI,NO,NO,SI},45,"Bariloche, San Martin de los Andes || Ushuaia, Calafate"), //45
                                                             new Patron(new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,NO,SI,SI,NO},55,"Mar del Plata, Rosario"), //55
-                                                            new Patron(new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI},56,"Pinamar, Gesell, San Bernardo, Tilcara, Pumamarca"), //56
-                                                            new Patron(new double[] {SI,NO,NO,SI,NO,NO,SI,NO,NO,SI,NO,NO,SI},58,"Pinamar, Gesell, San Bernardo, Tilcara, Pumamarca") //58
+                                                            new Patron(new double[] {SI,NO,NO,SI,NO,NO,NO,SI,NO,SI,NO,NO,SI},56,"Pinamar, Gesell, San Bernardo || Tilcara, Pumamarca"), //56
+                                                            new Patron(new double[] {SI,NO,NO,SI,NO,NO,SI,NO,NO,SI,NO,NO,SI},58,"Pinamar, Gesell, San Bernardo || Tilcara, Pumamarca") //58
                                                           };
 
             foreach (Patron patron in patronesAValidar)
@@ -82,9 +82,28 @@ namespace ConsoleTest
 
         static int getCityID(double[] array)
         {
-            int acum = 0;
+            /*int acum = 0;
             for (int i = 1; i <= array.Length; i++)
                 acum += (Math.Round(array[array.Length - i]) > 0 ?  2 ^ (array.Length - i) : 0);
+            return acum;*/
+
+            int sum = 0;
+            Array.Reverse(array);
+            for (int j = 0; j < array.Length; j++)
+            {
+                int integerValue = Convert.ToInt32(Math.Round(array[j],0));
+                if (integerValue == 1) sum += (positionalValue(j));
+            }
+            return sum;
+        }
+
+        static int positionalValue(int pos)
+        {
+            int acum = 1;
+            for (int i = 0; i < pos; i++)
+            {
+                acum = 2 * acum;
+            }
             return acum;
         }
         
